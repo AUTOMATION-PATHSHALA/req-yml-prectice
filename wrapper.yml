@@ -1,0 +1,7 @@
+---
+- name: Call hello world ansible roles
+  hosts: localhost
+  tasks:
+    - name: Execute ansible role
+      include_role:
+        name: helloworld
