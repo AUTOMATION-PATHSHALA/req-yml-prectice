@@ -2,6 +2,10 @@
 - name: Call hello world ansible roles
   hosts: all
   tasks:
+  
+    - name: Clone ansible role
+      shell: ansible-galaxy install -r roles/requirements.yml -p roles/helloworld
+      
     - name: Execute ansible role
       include_role:
         name: helloworld
