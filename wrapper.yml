@@ -5,6 +5,7 @@
   
     - name: Clone ansible role
       shell: ansible-galaxy install -r roles/requirements.yml -p roles/helloworld
+      delegate_to: localhost
       
     - name: Execute ansible role
       include_role:
