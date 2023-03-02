@@ -4,7 +4,7 @@
   tasks:
   
     - name: Clone ansible role
-      shell: ansible-galaxy install -r roles/requirements.yml -p roles/helloworld
+      shell: ansible-galaxy install -r roles/requirements.yml -p roles/
       delegate_to: localhost
       
     - name: Execute ansible role
